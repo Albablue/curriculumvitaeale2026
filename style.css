@@ -263,7 +263,7 @@ a:hover {
 /*Responsive part*/
 
 @media (max-width: 600px) {
-  .maintitle {
+  .maintitlecv {
     color: red !important;
   }
 }
