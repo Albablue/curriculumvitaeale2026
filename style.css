@@ -264,7 +264,7 @@ a:hover {
 
 @media (max-width: 600px) {
   .maintitle {
-    color: #e60f68;
+    color: #e60f68 !important;
   }
 }
 
