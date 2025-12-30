@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+html {
+    font-family: "Inter", sans-serif !important;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #F6F8FC;
+    background: linear-gradient(90deg,rgba(246, 248, 252, 1) 0%, rgba(213, 224, 237, 1) 100%);
+    color: #111;
+}
+
+p, .text {
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #0076df;
+}
+
+a:hover {
+  color: #024077;
+}
+
+.commands, .firstrow, .secondrow, .thirdrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.firstcon, .secondcon, .onefirstcon, .twosecondcon, .firstcon_02, .secondcon_02{
+   color:black;
+   background-color:white;
+   display: flex;
+   flex-direction: row;
+   padding:10px;
+   margin: 5px;
+   -webkit-box-shadow: 2px 9px 7px -2px rgba(0,0,0,0.06); 
+   box-shadow: 2px 9px 7px -2px rgba(0,0,0,0.06);
+   border-radius: 10px;
+}
+
+.threethirdcon, .fourthcon {
+   color:black;
+   background-color:white;
+   display: flex;
+   flex-direction: column;
+   padding:10px;
+   margin: 5px;
+   -webkit-box-shadow: 2px 9px 7px -2px rgba(0,0,0,0.06); 
+   box-shadow: 2px 9px 7px -2px rgba(0,0,0,0.06);
+   border-radius: 10px;
+}
+
+.firstcon{
+   color:black;
+   background-color:white;
+   display: flex;
+   flex-direction: row;
+   padding:10px;
+   margin: 5px;
+   -webkit-box-shadow: 2px 9px 7px -2px rgba(0,0,0,0.06); 
+   box-shadow: 2px 9px 7px -2px rgba(0,0,0,0.06);
+   border-radius: 10px;
+   width: 60%;
+   align-items: center;
+}
+
+.calendarcon {
+   display: flex;
+   flex-direction: column;
+   width: 40%;
+   padding: 0;
+}
+
+.imgcon {
+   width: 20%;
+}
+
+.secondcon {
+   width: 40%;
+   flex-direction: column;
+}
+
+.threethirdcon, .fourthcon {
+   width: 30%;
+}
+
+.firstcon_02 {
+   width: 50%;
+}
+
+.othercont {
+   width: 50%;
+}
+
+.maintitlecv {
+   font-size: 28px;
+   font-weight: 800;
+   margin: 5px 0 10px 5px;
+   padding: 0;
+}
+
+.maintitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  color: #024077;
+}
+
+.mainlinks {
+  margin: 5px; 
+  padding: 0; 
+  display: flex; 
+  align-items: center;
+  font-weight: 700;
+}
+
+.material-symbols-outlined {
+  margin-right: 5px;
+  padding: 0;
+}
+
+
+
+/*Button*/
+
+.buttonlang {
+    background-color: #0076df;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.buttonport {
+    background-color: white;
+    border: 2px solid #0076df; ;
+    color: #0076df;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.buttonlang:hover {
+  background-color: #024077;
+  color: white;
+}
+
+.buttonport:hover {
+  background-color: #024077;
+  border: 2px solid #024077; ;
+  color: white;
+}
+
+/*END Button*/
+
+/*Progress bar*/
+
+.barcontain {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content: start;
+}
+
+.progress-container {
+  position: relative;
+  width: 100%;
+  max-width: 145px;
+  background: white;
+  border: 0.5px solid #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+  padding: 0;
+}
+
+.progress-bar {
+  height: 14px;
+  width: 0%;
+  background-color: #ca1c1c;
+  border-radius: 20px 0 0 20px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 11px;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0; 
+  margin: 0
+}
+
+/* Tooltip text */
+.tooltip .tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 10;
+  bottom: 125%; /* position above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* avoid interfering with hover */
+}
+
+/* Tooltip arrow */
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* arrow at the bottom of tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+/* Show tooltip on hover */
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*Responsive part*/
+
+@media only screen and (max-width: 600px) {
+  .maintitle {
+    color: #e60f68;
+  }
+}
+
+@media only screen and (min-width: 1367px) {
+  .progress-container {
+    max-width: 220px;
+  }
+} 
