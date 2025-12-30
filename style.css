@@ -262,14 +262,14 @@ a:hover {
 
 /*Responsive part*/
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .maintitle {
     color: #e60f68;
   }
 }
 
-@media only screen and (min-width: 1367px) {
+/*@media only screen and (min-width: 1367px) {
   .progress-container {
     max-width: 220px;
   }
-} 
+} */
