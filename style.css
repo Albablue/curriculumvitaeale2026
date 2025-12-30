@@ -12,7 +12,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: #F6F8FC;
+    background: #0957f3;
     background: linear-gradient(90deg,rgba(246, 248, 252, 1) 0%, rgba(213, 224, 237, 1) 100%);
     color: #111;
 }
