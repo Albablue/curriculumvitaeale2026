@@ -12,7 +12,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: #0957f3;
+    background: #F6F8FC;
     background: linear-gradient(90deg,rgba(246, 248, 252, 1) 0%, rgba(213, 224, 237, 1) 100%);
     color: #111;
 }
@@ -262,15 +262,8 @@ a:hover {
 
 /*Responsive part*/
 
-@media (min-width:320px)  { 
 
-  body {
-    background: #F6F8FC;
-    background: linear-gradient(90deg,rgba(246, 248, 252, 1) 0%, rgba(213, 224, 237, 1) 100%);
-    color: #cf0c0c !important;
-    }
-}
-
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
 @media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
 @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
 @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
